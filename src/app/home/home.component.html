@@ -1,0 +1,33 @@
+<nav class="menu-lg-screen">
+  <ul>
+    <li><a (click)="navigate('')">inicio</a></li>
+    <li><a (click)="navigate('about')">sobre nós</a></li>
+    <li><a (click)="navigate('team')">time</a></li>
+    <li><a (click)="navigate('budget')">orçamento</a></li>
+    <li><a (click)="navigate('sponsors')">patrocínio</a></li>
+    <li><a (click)="navigate('talkus')">fale conosco</a></li>
+  </ul>
+</nav>
+
+<div class="toggle-btn" (click)="toggleMenu()">
+  <span class="one"></span>
+  <span class="two"></span>
+</div>
+
+<div>
+  <nav class="menu-sm-screen">
+    <ul>
+      <li><a (click)="navigate('')">inicio</a></li>
+      <li><a (click)="navigate('about')">sobre nós</a></li>
+      <li><a (click)="navigate('team')">time</a></li>
+      <li><a (click)="navigate('budget')">orçamento</a></li>
+      <li><a (click)="navigate('sponsors')">patrocínio</a></li>
+      <li><a (click)="navigate('talkus')">fale conosco</a></li>
+    </ul>
+  </nav>
+</div>
+
+<section class="main-background">
+  <div class="main-logo"></div>
+  <router-outlet></router-outlet>
+</section>
